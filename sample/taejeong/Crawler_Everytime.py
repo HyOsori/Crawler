@@ -74,7 +74,7 @@ def Crawling():
             for img   in soup.select("div.wrap.articles > article figure.attach > img"):
                 IMGS.append(img.attrs["src"])
                 
-            REPLIES = [] # [ [ WRITER, TIME, BODY ], ... ]
+            REPLIES = [] # [ [ IsChild, WRITER, TIME, BODY ], ... ]
             for reply in soup.select("div.comments > article"):
                 child = ("child" in reply.attrs["class"])
                 soup = BeautifulSoup(str(reply), "html.parser")
