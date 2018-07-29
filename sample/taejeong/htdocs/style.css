@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+}
+
+.SearchForm {
+  padding: 0;
+  display: inline-block;
+}
+
+.SearchArea {
+  border: none;
+  display: inline-block;
+}
+
+legend {
+  display: none;
+}
+
+.SearchBox {
+  position: relative;
+  float: left;
+  display: inline;
+  border: 2px solid #0061ff;
+}
+
+.SearchBox .keyword {
+  display: block;
+  width: 456px;
+  height: 41px;
+}
+
+input {
+  width: 444px;
+  height: 23px;
+  margin: 11px 0 0 9px;
+  _margin-top: 6px;
+  padding: 0;
+  border: 0;
+  font-family: "맑은고딕";
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  outline: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+button {
+  float: left;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin-left: -2px;
+  padding: 0;
+  border: 0;
+  background-color: #0061ff;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #0047bc;
+}
+
+button:active{
+  background-color: #00358e;
+}
+
+.ResultArea > p {
+  font-size: 10pt;
+}
+
+.ResultArea > .title {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.ResultArea > .body {
+  text-decoration: none;
+  color: grey;
+  font-weight: normal;
+  font-size: 10pt;
+}
